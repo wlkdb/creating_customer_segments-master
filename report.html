@@ -14022,7 +14022,7 @@ DMMwDMMwjCny/wF2eAYjCf/r7QAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>回答:</strong> 存在，Grocery和Detergents_Paper具有较强的相关性，大多数数据点分布在一条直线附近，Milk与Grocery、Detergents_Paper也存在一定的相关性。结果验证了我尝试预测的特征相关性，Fresh与Milk、Grocery、Detergents_Paper都成明显的正态分布，与另外两个特征的数据点看起来呈矩形分布，可能与坐标轴范围有关。</p>
+<p><strong>回答:</strong> 存在，Grocery和Detergents_Paper具有较强的相关性，大多数数据点分布在一条直线附近，Milk与Grocery、Detergents_Paper也存在一定的相关性。结果验证了我尝试预测的特征相关性。这些特征的数据似乎是呈右偏的偏态分布，也有可能是截取了右半部分的正态分布。</p>
 
 </div>
 </div>
@@ -19399,10 +19399,10 @@ CyZJkiRJ6rBgkiRJkqSO/wUmsGpjgOjg6AAAAABJRU5ErkJggg==
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong> 前两个的方差和为0.7068，前四个为0.9311。<br>
- 第一个最能代表生鲜店，因为Fresh和Frozen权重较大。<br>
- 第二个最能代表杂货店，因为Grocery和detegents_paper权值较大。<br>
- 第三个最能代表零售店，因为容易保存的Frozen和delicatessen权值较大。<br>
- 第四个最能代表冷藏店，因为Frozen的权值远远大于其他特征。</p>
+ 第一个主成分中Detegents_Paper、Milk和Grocery长度较长，且都为负权特征，正权特征只有Fresh和Frozen，最能代表生鲜店。<br>
+ 第二个主成分中Milk、Frozen和Delicatessen长度较长，且都为负权特征，Detegents_Paper和Grocery长度较短，没有正权特征，最能代表杂货店。<br>
+ 第三个主成分中Fresh、Delicatessen和Frozen长度较长，其中Delicatessen和Frozen为正权特征，最能代表零售店。<br>
+ 第四个主成分中Frozen和Delicatessen长度较长，其中Frozen为正权特征，最能代表冷藏店。</p>
 
 </div>
 </div>
